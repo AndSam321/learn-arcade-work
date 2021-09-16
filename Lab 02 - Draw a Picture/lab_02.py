@@ -36,7 +36,7 @@ arcade.draw_arc_filled(400, 20, 500, 270, arcade.color.LIGHT_BROWN, 0, 180)
 
 # Walls
 arcade.draw_line(0, 0, 253, 270, arcade.color.BLACK, 3)
-arcade.draw_line(250, 325, 260, 800, arcade.color.BLACK, 3)
+arcade.draw_line(250, 325, 250, 800, arcade.color.BLACK, 3)
 
 # TV Stuff
 arcade.draw_circle_filled(400, 400, 10, arcade.color.YELLOW)
