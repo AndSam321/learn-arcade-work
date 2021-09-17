@@ -3,9 +3,11 @@ import arcade
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 
+
 # Drawing Sand
 def draw_sand():
     arcade.draw_lrtb_rectangle_filled(0, 800, 100, 0, arcade.color.SAND)
+
 
 # Sunset
 def draw_sunset():
@@ -17,12 +19,10 @@ def draw_sunset():
 def draw_sun():
     arcade.draw_arc_filled(400, 300, 200, 200, arcade.color.RED, 0, 180)
 
+
 # Birds
-def draw_birds(x,y):
-    arcade.draw_arc_outline(x, y, 100, 100, arcade.color.BLACK, 0 , 180, 3)
-
-
-
+def draw_birds(x, y):
+    arcade.draw_arc_outline(x, y, 100, 100, arcade.color.BLACK, 0, 180, 3)
 
 
 def main():
@@ -35,50 +35,9 @@ def main():
     draw_sun()
     draw_birds(50, 50)
 
-
-
-
-
-
-
-
-
-# Finishing
+    # Finishing
     arcade.finish_render()
     arcade.run()
 
+
 main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
