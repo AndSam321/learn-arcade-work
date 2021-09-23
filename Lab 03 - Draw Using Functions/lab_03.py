@@ -19,7 +19,7 @@ def draw_sun():
 
 # Birds
 def draw_birds(x,y):
-    arcade.draw_arc_outline(x, y, 100, 100, arcade.color.BLACK, 0 , 180, 3)
+    arcade.draw_arc_outline(x, y, 100, 100, arcade.color.BLACK, 0, 180, 3)
 
 
 
