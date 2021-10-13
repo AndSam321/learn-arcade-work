@@ -83,12 +83,22 @@ def draw_section_7():
 
 
 def draw_section_8():
+<<<<<<< HEAD
     for row in range(30):
         for column in range(30 - row):
             x = row * 10 + 905
             y = column * 10 + 305
             arcade.draw_rectangle_filled(x, y, 5, 5, arcade.color.WHITE)
 
+=======
+    for row in range(35):
+        for column in range(row + 6):
+            x = (34 - column) * 10 + 905
+            y = row * 10 + 305
+            arcade.draw_rectangle_filled(x, y, 5, 5, arcade.color.WHITE)
+
+
+>>>>>>> 4e43884c33a7590216ae5b18f8840e569671fa27
 def main():
     # Create a window
     arcade.open_window(1200, 600, "Lab 05 - Loopy Lab")
