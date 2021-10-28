@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 Sprite Bullets
 
@@ -181,3 +182,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+=======
+x = 1
+while x < 64:
+    print(x)
+    x = x * 2
+>>>>>>> 788e083e2b941b607edd7816ebd154ce13fabb39

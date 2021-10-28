@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """ Lab 7 - User Control """
 
 import arcade
@@ -45,3 +46,8 @@ def main():
 
 
 main()
+=======
+import random
+x = random.randrange() * 10
+print(x)
+>>>>>>> 788e083e2b941b607edd7816ebd154ce13fabb39
