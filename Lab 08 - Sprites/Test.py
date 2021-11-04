@@ -12,8 +12,6 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 
 
-
-
 class Coin(arcade.Sprite):
 
     def reset_pos(self):
@@ -22,7 +20,7 @@ class Coin(arcade.Sprite):
         self.change_x = random.randrange(SCREEN_WIDTH)
 
     def update(self):
-        self.center_y -= 0.5
+        self.center_y -= 1
 
         if self.top < 0 :
             self.reset_pos()
@@ -62,6 +60,9 @@ class MyGame(arcade.Window):
     def __init__(self):
         # Call the parent class initializer
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, "Sprite Example")
+
+        """self.coin_sound = arcade.load_sound("arcade_resources_sounds.coin.wav")
+        self.mine_sound = arcade.load_sound("arcade_resources_sounds_error1.wav")"""
 
 
         # Variables that will hold sprite lists
