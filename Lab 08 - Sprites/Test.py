@@ -12,8 +12,6 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 
 
-
-
 class Coin(arcade.Sprite):
 
     def reset_pos(self):
@@ -22,7 +20,7 @@ class Coin(arcade.Sprite):
         self.change_x = random.randrange(SCREEN_WIDTH)
 
     def update(self):
-        self.center_y -= 0.5
+        self.center_y -= 1
 
         if self.top < 0 :
             self.reset_pos()
@@ -63,6 +61,9 @@ class MyGame(arcade.Window):
         # Call the parent class initializer
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, "Sprite Example")
 
+        """self.coin_sound = arcade.load_sound("arcade_resources_sounds.coin.wav")
+        self.mine_sound = arcade.load_sound("arcade_resources_sounds_error1.wav")"""
+
 
         # Variables that will hold sprite lists
         self.player_list = None
@@ -77,9 +78,6 @@ class MyGame(arcade.Window):
         self.set_mouse_visible(False)
 
         arcade.set_background_color(arcade.color.AMAZON)
-
-        self.coin_sound = arcade.load_sound("arcade_resources_sounds_coin4.wav")
-        self.mine_sound = arcade.load_sound("arcade_resources_sounds_error2.wav")
 
     def setup(self):
 
@@ -114,7 +112,7 @@ class MyGame(arcade.Window):
             self.coin_list.append(coin)
 
         for i in range(MINE_COUNT):
-            mine = Mine("mine.gif", SPRITE_SCALING_COIN)
+            mine = Mine("coin.png", SPRITE_SCALING_COIN)
             mine.center_x = random.randrange(SCREEN_WIDTH)
             mine.center_y = random.randrange(SCREEN_HEIGHT)
             mine.change_x = random.randrange(-3, 4)
@@ -156,7 +154,7 @@ class MyGame(arcade.Window):
         for coin in hit_list:
             coin.remove_from_sprite_lists()
             self.score += 1
-            arcade.play_sound(self.coin_sound)
+            """arcade.play_sound(self.coin_sound)"""
 
 
         hit_list = arcade.check_for_collision_with_list(self.player_sprite,
@@ -164,7 +162,7 @@ class MyGame(arcade.Window):
         for mine in hit_list:
             mine.remove_from_sprite_lists()
             self.score -= 1
-            arcade.play_sound(self.mine_sound)
+            """arcade.play_sound(self.mine_sound)"""
 
 
     def on_key_press(self, key, modifiers):
