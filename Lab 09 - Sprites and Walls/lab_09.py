@@ -95,7 +95,7 @@ class MyGame(arcade.Window):
 
         # Starting Point Image taken from Novaskin.com
         for x in range(200, 1000, 64):
-            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 3)
+            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 4)
             wall.center_x = x
             wall.center_y = 350
             self.wall_list.append(wall)
@@ -106,14 +106,14 @@ class MyGame(arcade.Window):
                            [300, 600],
                            [310, 500]]
         for coordinate in coordinate_list:
-            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 3)
+            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 4)
             wall.center_x = coordinate[0]
             wall.center_y = coordinate[1]
             self.wall_list.append(wall)
 
         # Left Side of Map
         for y in range(350, 800, 64):
-            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 3)
+            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 4)
             wall.center_x = 50
             wall.center_y = y
             self.wall_list.append(wall)
@@ -130,38 +130,38 @@ class MyGame(arcade.Window):
                            [300, 800]]
 
         for coordinate in coordinate_list:
-            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 3)
+            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 4)
             wall.center_x = coordinate[0]
             wall.center_y = coordinate[1]
             self.wall_list.append(wall)
 
         # Right Side of Map
         for y in range(350, 800, 64):
-            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 3)
+            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 4)
             wall.center_x = 500
             wall.center_y = y
             self.wall_list.append(wall)
 
         for x in range(500, 890, 64):
-            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 3)
+            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 4)
             wall.center_x = x
             wall.center_y = 800
             self.wall_list.append(wall)
 
         for y in range(500, 800, 64):
-            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 3)
+            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 4)
             wall.center_x = 880
             wall.center_y = y
             self.wall_list.append(wall)
 
         for x in range(650, 890, 64):
-            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 3)
+            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 4)
             wall.center_x = x
             wall.center_y = 500
             self.wall_list.append(wall)
 
         for y in range(500, 680, 64):
-            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 3)
+            wall = arcade.Sprite("unnamed.png", SPRITE_SCALING / 4)
             wall.center_x = 650
             wall.center_y = y
             self.wall_list.append(wall)
@@ -169,25 +169,25 @@ class MyGame(arcade.Window):
         # Border. Image taken from Novaskin.com
         # Left Wall
         for y in range(200, 1000, 64):
-            wall = arcade.Sprite("tnt.gif", SPRITE_SCALING / 6)
+            wall = arcade.Sprite("minecraft-tnt-block-png-transparent.png", SPRITE_SCALING / 4)
             wall.center_x = -250
             wall.center_y = y
             self.wall_list.append(wall)
             # Bottom Wall
         for x in range(-200, 1000, 64):
-            wall = arcade.Sprite("tnt.gif", SPRITE_SCALING / 6)
+            wall = arcade.Sprite("minecraft-tnt-block-png-transparent.png", SPRITE_SCALING / 4)
             wall.center_x = x
             wall.center_y = 200
             self.wall_list.append(wall)
             # Top Wall
         for x in range(-250, 980, 64):
-            wall = arcade.Sprite("tnt.gif", SPRITE_SCALING / 6)
+            wall = arcade.Sprite("minecraft-tnt-block-png-transparent.png", SPRITE_SCALING / 4)
             wall.center_x = x
             wall.center_y = 1000
             self.wall_list.append(wall)
             # Right Wall
         for y in range(200, 1000, 64):
-            wall = arcade.Sprite("tnt.gif", SPRITE_SCALING / 6)
+            wall = arcade.Sprite("minecraft-tnt-block-png-transparent.png", SPRITE_SCALING / 4)
             wall.center_x = 1000
             wall.center_y = y
             self.wall_list.append(wall)
@@ -271,6 +271,7 @@ class MyGame(arcade.Window):
     def scroll_to_player(self):
         """
         Scroll the window to the player.
+
         if CAMERA_SPEED is 1, the camera will immediately move to the desired position.
         Anything between 0 and 1 will have the camera move to the location with a smoother
         pan.
@@ -298,4 +299,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
