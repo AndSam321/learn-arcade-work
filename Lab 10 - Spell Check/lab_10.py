@@ -1,18 +1,17 @@
 import re
 
-<<<<<<< HEAD
 
 # This function takes in a line of text and returns
 # a list of words in the line.
 def split_line(line):
     return re.findall('[A-Za-z]+(?:\'[A-Za-z]+)?', line)
 
-=======
+
 # This function takes in a line of text and returns
 # a list of words in the line.
 def split_line(line):
     return re.findall('[A-Za-z]+(?:\'[A-Za-z]+)?',line)
->>>>>>> 000ba3c369b64a3257939444b65f4287dd743e9f
+
 
 def main():
     dictionary_file = open("dictionary.txt")
@@ -26,7 +25,7 @@ def main():
     print("---Linear Search---")
 
     alice_file = open("AliceInWonderLand200.txt")
-<<<<<<< HEAD
+
     line_number = 0
     for line in alice_file:
         line_number += 1
@@ -67,11 +66,6 @@ def main():
 
 
 main()
-=======
-    for line in alice_file:
-        word_list = split_line(line)
-        for each_word in word_list:
-            each_word < len(word_list) and word_list[current_list_position] != key
 
 
 
@@ -80,6 +74,3 @@ main()
 
 
 
-
-
->>>>>>> 000ba3c369b64a3257939444b65f4287dd743e9f
