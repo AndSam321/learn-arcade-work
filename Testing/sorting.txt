@@ -85,6 +85,7 @@ Holds the current position when scanning through the list.
 
 https://learn.arcade.academy/en/latest/chapters/30_sorting/sorting.html
 
+<<<<<<< HEAD
 def insertion_sort(my_list):
     """ Sort a list using the insertion sort """
 
@@ -204,6 +205,8 @@ def main():
     insertion_sort(list_for_insertion_sort)
     print_list(list_for_insertion_sort)
 
+=======
+>>>>>>> 961beb7d14d20a7b6be54d5ad067374d43196c97
 
 Modify the sorts to print the number of times the inside loop is run, and the number of times the outside loop is run. Modify the program to work with a list of 100. Paste the code you used here. Run the program and list the numbers you got here. (DON'T FORGET TO INCLUDE THE RESULTS!) Inside loop for selection sort should be about 5,000, and insertion sort 2,500. Double-check if you don't get numbers close to these.
 

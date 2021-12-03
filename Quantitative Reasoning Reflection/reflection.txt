@@ -1,0 +1,29 @@
+Andrew Samountry - 12/01/2021 - Quantitative Reflection
+
+
+1. A lot of the technical problems that I had with my code, I began by
+breaking it down into smaller problems. For instance, in the 3rd lab, we
+were tasked with drawing a scene by using functions and 3+ lines of complexity
+for the functions. I didn't know how to draw a basketball with the lines, so
+I began by creating a circle, then using code that I knew how to use (lines and
+curves) to create a basketball image.
+    Another example of me using logical thinking to work through the problems
+is deciding which method of code to use. When I first began learning about
+If/Elif/Else and For/While loops, I was confused whenever I needed to implement
+certain statements, when I could use either in a situation. But, in the Sprites
+and Walls lab, it became tedious for myself to create walls and coins in the
+same area, so I figured out how to create my own for loop to loop the walls
+in a continuous line/spiral to create an obstacle for the player sprite.
+
+
+2. Comments, descriptive variables, Keeping track of changes (evolve),
+Documentation of how algorithm works
+
+
+3. Running program to see if it crashes, inspect the error to see what went
+wrong, expected output with input,
+
+
+4.
+
+
