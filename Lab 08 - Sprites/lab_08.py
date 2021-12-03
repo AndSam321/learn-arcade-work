@@ -78,6 +78,9 @@ class MyGame(arcade.Window):
 
         arcade.set_background_color(arcade.color.AMAZON)
 
+        self.coin_sound = arcade.load_sound("arcade_resources_sounds_coin4.wav")
+        self.mine_sound = arcade.load_sound("arcade_resources_sounds_error2.wav")
+
     def setup(self):
 
         # Sprite lists
@@ -111,7 +114,11 @@ class MyGame(arcade.Window):
             self.coin_list.append(coin)
 
         for i in range(MINE_COUNT):
+<<<<<<< HEAD
             mine = Mine("mine.gif", SPRITE_SCALING_COIN / 4)
+=======
+            mine = Mine("mine.gif", SPRITE_SCALING_COIN)
+>>>>>>> 6d5fa9cf1c1780d7f3dc163f4f19d86b0b7a7d14
             mine.center_x = random.randrange(SCREEN_WIDTH)
             mine.center_y = random.randrange(SCREEN_HEIGHT)
             mine.change_x = random.randrange(-3, 4)
@@ -153,7 +160,7 @@ class MyGame(arcade.Window):
         for coin in hit_list:
             coin.remove_from_sprite_lists()
             self.score += 1
-            """arcade.play_sound(self.coin_sound)"""
+            arcade.play_sound(self.coin_sound)
 
 
         hit_list = arcade.check_for_collision_with_list(self.player_sprite,
@@ -161,7 +168,7 @@ class MyGame(arcade.Window):
         for mine in hit_list:
             mine.remove_from_sprite_lists()
             self.score -= 1
-            """arcade.play_sound(self.mine_sound)"""
+            arcade.play_sound(self.mine_sound)
 
 
     def on_key_press(self, key, modifiers):
