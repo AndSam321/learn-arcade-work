@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+
+=======
 import arcade
 
 SPRITE_SCALING = 0.5
@@ -299,3 +302,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+>>>>>>> 961beb7d14d20a7b6be54d5ad067374d43196c97
