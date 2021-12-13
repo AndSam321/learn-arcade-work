@@ -114,7 +114,11 @@ class MyGame(arcade.Window):
             self.coin_list.append(coin)
 
         for i in range(MINE_COUNT):
+<<<<<<< HEAD
+            mine = Mine("mine.gif", SPRITE_SCALING_COIN / 4)
+=======
             mine = Mine("mine.gif", SPRITE_SCALING_COIN)
+>>>>>>> 6d5fa9cf1c1780d7f3dc163f4f19d86b0b7a7d14
             mine.center_x = random.randrange(SCREEN_WIDTH)
             mine.center_y = random.randrange(SCREEN_HEIGHT)
             mine.change_x = random.randrange(-3, 4)
