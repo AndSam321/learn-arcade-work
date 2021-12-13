@@ -16,14 +16,32 @@ same area, so I figured out how to create my own for loop to loop the walls
 in a continuous line/spiral to create an obstacle for the player sprite.
 
 
-2. Comments, descriptive variables, Keeping track of changes (evolve),
-Documentation of how algorithm works
+2. Being very intentional with the way the code is written is important in communication thoughts
+and ideas to other programmers who view your code. Things like comments or descriptive variables
+make it easy for others to read and understand your progress. An example that I have using more structured
+coding (instead of sloppy) is creating blocks of code, rather than a long line of code. Function names also matter
+because it describes what the following set of code is set to do, rather than having someone guess on what
+you're trying to do. Easier communication between programmers leads to a better understand overall for them to help
+or learn from your own code.
 
 
-3. Running program to see if it crashes, inspect the error to see what went
-wrong, expected output with input,
+
+3. A lot of the time when I'm trying to run code and it crashes, I try to view the error when it occurs. It usually
+tells where the error would be in the program and what type of error it is. That is usually my first time in
+trying to fix an error. I, then would try to see why the code failed when comparing my intended input and expected
+output against what actually occurred. Using the debugger to run through each line to see where it would crash
+is also another way of fixing the code.
+An example of me actually trying to debug the code was during the text adventure lab. I kept getting the same output
+when I would move into a new direction. THe same room description would occur. What I did to try and fix this was
+create a new line to see if I actually moved into the new room when tested and when it didn't, I knew I had to fix
+that line of code.
 
 
-4.
+4. I think there are a lot of limitations to just using numerical methods to make decisions. As humans, we aren't black
+and white. Unlike binary numbers which consists of just 0 and 1s, humans seem to make a lot of their own decisions based
+off of feelings and instinct. A computer can't recognize the gray area between black and white because it only computes
+what it takes in as an input and spits out an output. We can't evaluate students based solely on test scores because
+many students have different strengths and weaknesses that make them unique. To categorize them into numbers isn't
+fitting because everyone is different.
 
 
